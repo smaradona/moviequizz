@@ -63,7 +63,7 @@ angular.module("ContactsApp")
         }
 
     }])
-    .controller("MovieController", ['$cookies', '$scope', '$location', '$http', 'shuffleFilterFilter', function($cookies, $scope, $location, $http, shuffleFilterFilter) {
+    .controller("MovieController", ['$cookies', '$scope', '$location', '$http', 'shuffleFilterFilter', 'quit', function($cookies, $scope, $location, $http, shuffleFilterFilter, quit) {
         $scope.helps = [];
         $scope.helpMe = true;
         $scope.movie;
@@ -159,5 +159,12 @@ angular.module("ContactsApp")
             var score = $scope.$parent.score + parseInt($cookies.get('points'));
             $cookies.put('score', score);
             $location.url('/start/');
+        }
+        
+        $scope.exit = function() {
+            $cookies = quit($cookies);
+            $scope.$parent.lives = 0;
+            $scope.$parent.score = 0;
+            $location.url('/');
         }
     }]);
