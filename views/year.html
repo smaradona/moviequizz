@@ -1,0 +1,8 @@
+<div class="breadcrumbs col-lg-offset-3"><strong>Category: </strong> {{ genreName }} </div>
+<div class="options-year list-group text-center col-xs-12 col-lg-6 center-block">
+    <h3>Pick a year:</h3>
+    <button ng-repeat="year in years | orderBy:'release_date'"
+        ng-click="select(year.id, year.release_date)" 
+        class="btn btn-primary col-xs-8 option col-lg-8 center-block">
+        {{ year.release_date | yearFilter }}</button><br>
+</div>

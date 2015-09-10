@@ -1,0 +1,13 @@
+<div class="breadcrumbs col-lg-offset-3"><strong>Category: </strong> {{ genreName }} <span class="glyphicon glyphicon-menu-right"></span> {{ movieYear}} </div>
+<div class="hint list-group text-center col-xs-12 col-lg-6 center-block">
+    <div ng-if="hint">
+    	<div class="list-group-item">
+    		<strong>Hint:</strong> <span ng-bind="movie.overview | overviewFilter | titleFilter:movie.title"></span>
+    	</div>
+    	<p><input type="text" class="form-control" placeholder="Movie title goes here..." ng-model="guess" ng-change='guessChecker(guess)' ng-if="show"/> </p>
+    	<button class="btn btn-primary" ng-click="showOptions()" ng-if="helpMe">Help me!</button>
+    </div>
+	<lost></lost>
+    <help-options></help-options>
+	<guess-right></guess-right>
+</div>

@@ -1,0 +1,7 @@
+<div class="options-start list-group text-center col-xs-12 col-md-8 center-block">
+    <h3>Pick a category:</h3>
+    <button ng-repeat="genre in genres" 
+        ng-click="select(genre.id, genre.name)" 
+        class="btn btn-primary option col-xs-8 col-md-8 center-block">
+        {{ genre.name }}</button><br>
+</div>

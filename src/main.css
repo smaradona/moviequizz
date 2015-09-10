@@ -1,0 +1,129 @@
+
+body {
+    background-image: url('./images/moviecollage.jpg');
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #CCCCCC;
+}
+header {
+    background-color: rgba(22,22,22,0.8);
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+a {
+    color: #059481;
+}
+a:hover {
+    cursor: pointer;
+    color: #037B6B;
+    text-decoration: none;
+}
+.btn {
+    border-radius: 0px;
+    padding: 12px;
+    font-size: 16px;
+    white-space: normal;
+}
+.btn-primary {
+    background-color: #059481;
+    border-color: #19695E;
+}
+.btn-primary:hover {
+    background-color: #037B6B;
+}
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: #026356;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+    border-color: #97DA14;
+}
+.header-container {
+    padding: 0px 15px;
+}
+.wrapper {
+    background: rgba(22,22,22,0.8);
+    margin-top: 78px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.center-block {
+    float: none;
+}
+.correct.focus,
+.correct:focus,
+.correct:active,
+.correct:active:focus,
+.correct {
+    background-color: #0EA521;
+}
+.incorrect.focus,
+.incorrect:focus,
+.incorrect:active,
+.incorrect:active:focus,
+.incorrect {
+    background-color: #CC2800;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+.option {
+    margin-right: auto;
+    margin-left: auto;
+}
+.list-group-item {
+    background-color: rgba(22,22,22,0.8);
+    border-radius: 0px;
+    border: none;
+}
+.options-menu {
+    margin-top: 30px;
+}
+.options-start {
+    margin-top: 75px;
+}
+.options-year {
+    margin-top: 36px;
+}
+.breadcrumbs {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #fff;
+}
+.hint {
+    margin-top: 25px;
+}
+.glyphicon {
+    font-size: 13px;
+}
+.tmdb-logo {
+    margin-bottom: 20px;
+}
+#play-button {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.lost-wrap {
+    margin-bottom: 115px;
+}
+.lost-message {
+    margin-bottom: 35px;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .wrapper {
+        margin-top: 0px;
+    }
+    .header-container {
+        padding: 0px;
+    }

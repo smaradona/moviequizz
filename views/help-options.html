@@ -1,0 +1,11 @@
+<div ng-if="!show">
+	<h3><strong>Options:</strong></h3>
+	<div class="list-group">
+		<button class="btn btn-primary col-xs-8 option col-lg-10 center-block" ng-repeat="help in helps" 
+    	ng-click="select(help.id)"
+    	ng-class="{correct: help.id === idCorrectOption, incorrect: help.id === idIncorrectOption}"
+    	class="list-group-item">
+    	{{ help.title }}</button><br>
+	</div>
+	<button class="btn btn-primary visible-lg-block center-block" ng-click="nextTrivia()" ng-if="nextQuestion">Next Question!</button>
+</div>

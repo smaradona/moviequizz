@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ContactsApp">
+<head>
+    <title> Movie Quizz </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <base href="/">
+    <link rel="stylesheet" href="src/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="src/main.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper col-lg-6 col-md-6 col-xs-12 center-block">
+        <div class='row'>
+            <div class="header-container" ng-controller="HeaderController">
+                <header class="clearfix vertical-align">
+                    <h1 class="pull left col-xs-6 col-md-5">Movie Quizz</h1>
+                    <div class="pull right col-xs-6 col-md-8">
+                        <div class="score pull-right col-xs-4 col-md-4 text-right"><a ng-click="exit()"><strong>Quit</strong></a></div>
+                        <div class="score pull-right col-xs-4 col-md-4 text-right"><span class="glyphicon glyphicon-record"></span><strong> Score: </strong> {{ score }} </div>
+                        <div class="lives pull-right col-xs-4 col-md-4 text-right"><span class="glyphicon glyphicon-heart"></span><strong> Lives: </strong> {{ lives }} </div>
+                    </div>
+                </header>
+            </div>
+            <div class='col-sm-12' ng-view></div>
+            <a href="https://www.themoviedb.org">
+                <img src="../src/images/tmdb-logo.png" alt="TMDB logo" class="col-xs-3 col-md-3 tmdb-logo pull-right">
+            </a>
+        </div>
+    </div>
+    <script src='lib/jquery/dist/jquery.min.js'></script>
+    <script src='lib/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-messages/angular-messages.min.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.min.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/controllers.js"></script>
+    <script src="src/factories.js"></script>
+    <script src="src/filter.js"></script>
+    <script src="src/directives.js"></script>
+</body>
+</html>
